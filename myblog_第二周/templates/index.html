@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}首页 - 我的博客{% endblock %}
+
+{% block content %}
+    <h1>你好,{{ name }}!</h1>
+    <ul>
+      {% for post in posts %}
+          <li>{{ post.title}} - 作者: {{ post.author }}</li>
+      {% endfor %}
+    </ul>
+{% endblock %}
