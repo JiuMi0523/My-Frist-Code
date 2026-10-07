@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}发文章 - 我的博客{% endblock %}
+
+{% block content %}
+   <h1>发表新文章</h1>
+   <form method="POST">
+         <P>
+            <label>标题: </label>
+            <input type="text" name="title">
+         </P>
+         <p>
+            <label>作者:</label>
+            <input type="text" name="author"
+         </p>
+         <p>
+            <label>内容:</label><br>
+            <textarea name="content" rows="5" cols="40"></textarea>
+         </p>
+         <p>
+            <button type="submit">发布</button>
+         </p>
+    </form>
+{% endblock %}
